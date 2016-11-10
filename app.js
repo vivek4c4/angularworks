@@ -1,6 +1,6 @@
 (function () {
-  angular.module("myFirstApp",[]);
-  angular.controller("myFirstController",function($scope) {
+  angular.module("myFirstApp",[])
+  .controller("myFirstController",function($scope) {
     $scope.name="vivek";
     $scope.total=0;
     $scope.calculateName=function(){
