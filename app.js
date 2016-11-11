@@ -14,6 +14,9 @@
     }
 
 $scope.statesofbeing="hungry";
+$scope.feedVivek=function(){
+  $scope.statesofbeing="food";
+};
 
     function calculateNumericString(string) {
       var calculation=0;
