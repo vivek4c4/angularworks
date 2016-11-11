@@ -1,8 +1,12 @@
 (function () {
   angular.module("myFirstApp",[])
-  .controller("myFirstController",function($scope) {
+  .controller("myFirstController",function($scope,$filter) {
     $scope.name="vivek";
     $scope.total=0;
+    $scope.upper=function () {
+      var upCase=$filter('uppercase')
+      $scope.name=upCase($scope.name);
+    };
     $scope.calculateName=function(){
 
       total=calculateNumericString($scope.name);
