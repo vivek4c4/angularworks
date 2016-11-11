@@ -13,6 +13,8 @@
       $scope.total=total;
     }
 
+$scope.statesofbeing="hungry";
+
     function calculateNumericString(string) {
       var calculation=0;
       for (var i = 0; i < string.length; i++) {
